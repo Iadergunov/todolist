@@ -1,6 +1,6 @@
 <?php 
 	$text_task = $_POST['task'];
-    //Connect to db
+    //Connect to database
     include 'db_auth.php';
     
     if (!($stmt = $mysqli->prepare("INSERT INTO tasks(task_text) VALUES (?)"))) {
